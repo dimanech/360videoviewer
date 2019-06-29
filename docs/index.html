@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ThreeSixtyVideoViewer Demo</title>
+	<link rel="stylesheet" href="./example/main.css">
+</head>
+<body>
+	
+	<video id="video" preload="metadata" autoplay muted>
+		<source src="https://underarmour.scene7.com/is/content/Underarmour/V6.5/360Videos/auto_dim7_3020978-301_640x480_1200K.mp4" type="video/mp4">
+		<source src="./example/video.mov" type="video/mov">
+	</video>
+	
+	<script type="module">
+		import ThreeSixtyVideoViewer from 'ThreeSixtyVideoViewer.js'
+		new ThreeSixtyVideoViewer({ selector: '#video', fps: 60 });
+	</script>
+</body>
+</html>
