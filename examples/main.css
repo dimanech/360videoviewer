@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+}
+
+.c-video360 {
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	max-width: 500px;
+}
+
+.c-video360 video {
+	display: block;
+	width: 100%;
+}
+
+.c-video360::before {
+	content: attr(poster) "";
+	background: rebeccapurple;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.c-video360.m-loaded::before {
+	display: none;
+}
+
+.c-video360.m-loaded {
+	cursor: -webkit-grab;
+	cursor: grab;
+}
+
+.c-video360.m-grabbing {
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
