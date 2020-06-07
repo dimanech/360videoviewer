@@ -1,6 +1,8 @@
 # 360 view based on video file
 
-This is working prototype of concept to use video as source of 360 view widget.
+This is working prototype of concept to use video as source of 360 view component.
+
+To scroll video smoothly you need to export each frame as keyframe - ffmpeg/h.264`-x264opts keyint=1`
 
 ## Concept
 
